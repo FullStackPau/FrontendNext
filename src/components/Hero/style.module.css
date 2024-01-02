@@ -1,0 +1,11 @@
+.sectionbutton {
+    height:300px;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius:0px 0px 10px 10px;
+}
+.sectionbutton > button{
+  margin-top:5px;
+}

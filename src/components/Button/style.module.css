@@ -1,0 +1,44 @@
+ .primary {
+    background:var(--primaryorange);
+    color:white;
+}
+.primary:hover{
+    background:var(--hoverorange);
+}
+.secondary{
+    border:1px solid var(--primaryorange);
+    color: var(--primaryorange);
+    background:white;
+}
+.secondary:hover{
+    border:1px solid var(--hoverorange);
+    color:var(--hoverorange);
+    background:var(--lightgray);
+}
+.danger{
+    background: var(--danger);
+    color:white;
+}
+.tertiary{
+    background: var(--lightgray);
+    color: var(--darkgray);
+}
+.tertiary:hover{
+    background: var(--lightgray);
+    color: var(--darkgray);
+}
+
+.full {
+    width: 100%;
+    height:42px;
+    align-items: center;
+}
+.big {
+    padding:15px 35px 15px 35px;
+}
+.medium {
+    padding:12px 25px 12px 25px;
+}
+.small {
+    padding:5px 15px 5px 15px;
+}

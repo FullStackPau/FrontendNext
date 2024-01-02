@@ -1,0 +1,39 @@
+.wrappercard{
+    display:flex;
+    flex-flow: column nowrap;
+}
+.card{
+    display:flex;
+    flex-flow:column nowrap;
+    height:100%;
+    background: var(--whitecard);
+    border-radius:6px;
+    padding:16px;
+    z-index:10;
+    border:1px solid var(--darkgray);
+}
+.topcard{
+    padding:2px 16px;
+    position:absolute;
+    z-index:20;
+    margin-left:15px;
+    margin-top:-8px;
+    font-size:10px;
+    background:white;
+    border-radius:10px;
+    font-weight: bold;
+    border:1px solid var(--darkgray);
+}
+.companycard{
+    width:100%;
+    height:auto;
+    margin-top:1.6em;
+    border-radius:5px;
+    padding:4px;
+  }
+.companycard > p {
+    font-size: 12px;
+}
+.rightdeletebutton{
+    margin-left:auto;
+}

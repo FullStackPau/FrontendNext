@@ -1,0 +1,7 @@
+.main {
+    width: 100%;
+    min-height:300px;
+    display:flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
