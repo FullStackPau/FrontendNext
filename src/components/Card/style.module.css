@@ -26,6 +26,7 @@
 }
 .companycard{
     width:100%;
+    min-height:100px;
     height:auto;
     margin-top:1.6em;
     border-radius:5px;
