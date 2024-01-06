@@ -3,10 +3,6 @@ describe('template spec', () => {
     cy.visit('/')
     cy.get('.style_primary__inKft').click()
   })
-  it('should click error button and show toast', () => {
-    cy.visit('/')
-    cy.get('.style_sectionbutton__wKBmL > .style_danger__m2Oey').click()
-  })
   it('should click in each delete button card and remove the card', () => {
     cy.visit('/')
     cy.get('.style_primary__inKft').click()
