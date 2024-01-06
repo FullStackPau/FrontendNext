@@ -1,6 +1,6 @@
  .primary {
     background:var(--primaryorange);
-    color:white;
+    color:var(--whitedefault);
 }
 .primary:hover{
     background:var(--hoverorange);
@@ -8,7 +8,7 @@
 .secondary{
     border:1px solid var(--primaryorange);
     color: var(--primaryorange);
-    background:white;
+    background:var(--whitedefault);
 }
 .secondary:hover{
     border:1px solid var(--hoverorange);
@@ -17,7 +17,7 @@
 }
 .danger{
     background: var(--danger);
-    color:white;
+    color:var(--whitedefault);
 }
 .tertiary{
     background: var(--lightgray);

@@ -8,9 +8,9 @@
     align-items:center;
     border-radius:5px;
     background:var(--danger);
-    color:white;
+    color:var(--whitedefault);
     font-weight:400;
     position:absolute;
-    margin:auto;
+    right:30px;
     margin-top:20px;
 }

@@ -8,6 +8,10 @@ import getUsers from "@/services/getUsers";
 export default function Hero(){
     const { setUsers, setToast } = useContext(AppContext);
     const [disable, setDisable] = useState(false);
+    const handleError = (text: string = "Error Element") => {
+        setToast(text);
+        setTimeout(() => {setToast(null)}, 2000);
+    }
     const handleFetchUser = async () => {
         setDisable(true);
         const users = await getUsers();
@@ -19,15 +23,11 @@ export default function Hero(){
         setUsers(users);
         setTimeout(() => setDisable(false), 400);
     }
-    const handleError = (text: string = "Error Element") => {
-        setToast(text);
-        setTimeout(() => {setToast(null)}, 2000);
-    }
+
     return(
     <section className={style.sectionbutton}>
         <h1>Welcome to the Biggest Recruitment Database!</h1>
         <Button onClick={handleFetchUser} disabled={disable}>Get Users</Button>
-        <Button type="danger" onClick={() => handleError()} disabled={disable}>Click to show Error Element</Button>
     </section>
     );
 }

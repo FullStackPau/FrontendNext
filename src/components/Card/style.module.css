@@ -6,23 +6,11 @@
     display:flex;
     flex-flow:column nowrap;
     height:100%;
-    background: var(--whitecard);
+    background: var(--whitecomponent);
     border-radius:6px;
     padding:16px;
     z-index:10;
-    border:1px solid var(--darkgray);
-}
-.topcard{
-    padding:2px 16px;
-    position:absolute;
-    z-index:20;
-    margin-left:15px;
-    margin-top:-8px;
-    font-size:10px;
-    background:white;
-    border-radius:10px;
-    font-weight: bold;
-    border:1px solid var(--darkgray);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .companycard{
     min-height:100px;

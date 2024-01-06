@@ -13,7 +13,10 @@ const config: Config = {
   moduleNameMapper: {
     '^@/components/(.*)$': '<rootDir>/components/$1',
   },
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts']
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
+  globals: {
+    fetch: global.fetch,
+  }
 }
  
 // createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async

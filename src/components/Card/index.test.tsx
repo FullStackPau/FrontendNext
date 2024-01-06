@@ -26,7 +26,7 @@ describe("Card component", () => {
           bs: 'Strategizing the business world',
         },
       };
-    test('should render Card component with user data', () => {
+    it('should render Card component with user data', () => {
         const onDeleteCard = jest.fn();
         render(<Card onDeleteCard={onDeleteCard} data={mockUserData} />);
         expect(screen.getByText(/John Doe/i)).toBeInTheDocument();
@@ -36,7 +36,7 @@ describe("Card component", () => {
         expect(screen.getByText(/Catch me if you can/)).toBeInTheDocument();
         expect(screen.getByText(/Strategizing the business world/)).toBeInTheDocument();
     });
-    test("should work the onDeleteCard", () => {
+    it("should work the onDeleteCard", () => {
       const onDeleteCard = jest.fn();
       render(<Card onDeleteCard={onDeleteCard} data={mockUserData} />);
       const buttonElement = screen.getByText("Delete");
